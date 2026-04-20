@@ -5,7 +5,7 @@ To deploy the **Criminal Face Detection API** to Render, follow these exact step
 1. Create a new **Web Service** on [Render.com](https://render.com).
 2. Connect your GitHub repository that contains this `Criminal Detection` folder.
 3. Configure the service:
-   - **Environment**: Python 3
+   - **Environment**: Python 3 (I've added `.python-version` to pin 3.11.9)
    - **Root Directory**: `Criminal Detection` (if it's in a subdirectory of your repo)
    - **Build Command**: `pip install -r requirements.txt`
    - **Start Command**: `uvicorn main:app --host 0.0.0.0 --port $PORT`
