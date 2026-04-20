@@ -1,0 +1,402 @@
+[
+    {
+        "id": 1,
+        "name": "Sagar Jadhav",
+        "age": 25,
+        "location": "Kharadi, Pune",
+        "crime": "Domestic Violence",
+        "image": "/static/images/criminal_1.jpg"
+    },
+    {
+        "id": 2,
+        "name": "Dinesh Shinde",
+        "age": 44,
+        "location": "Vishrantwadi, Pune",
+        "crime": "Harassment",
+        "image": "/static/images/criminal_2.jpg"
+    },
+    {
+        "id": 3,
+        "name": "Dinesh Bhosale",
+        "age": 34,
+        "location": "Baner, Pune",
+        "crime": "Harassment",
+        "image": "/static/images/criminal_3.jpg"
+    },
+    {
+        "id": 4,
+        "name": "Manoj Gaikwad",
+        "age": 39,
+        "location": "Aundh, Pune",
+        "crime": "Stalking",
+        "image": "/static/images/criminal_4.jpg"
+    },
+    {
+        "id": 5,
+        "name": "Suresh Wagh",
+        "age": 34,
+        "location": "Chinchwad, Pune",
+        "crime": "Stalking",
+        "image": "/static/images/criminal_5.jpg"
+    },
+    {
+        "id": 6,
+        "name": "Kiran Pawar",
+        "age": 37,
+        "location": "Kalyani Nagar, Pune",
+        "crime": "Domestic Violence",
+        "image": "/static/images/criminal_6.jpg"
+    },
+    {
+        "id": 7,
+        "name": "Ramesh Gaikwad",
+        "age": 37,
+        "location": "Hadapsar, Pune",
+        "crime": "Extortion",
+        "image": "/static/images/criminal_7.jpg"
+    },
+    {
+        "id": 8,
+        "name": "Amit Chavan",
+        "age": 35,
+        "location": "Shivajinagar, Pune",
+        "crime": "Stalking",
+        "image": "/static/images/criminal_8.jpg"
+    },
+    {
+        "id": 9,
+        "name": "Amit Gaikwad",
+        "age": 58,
+        "location": "Baner, Pune",
+        "crime": "Assault",
+        "image": "/static/images/criminal_9.jpg"
+    },
+    {
+        "id": 10,
+        "name": "Sanjay Patil",
+        "age": 52,
+        "location": "Viman Nagar, Pune",
+        "crime": "Kidnapping",
+        "image": "/static/images/criminal_10.jpg"
+    },
+    {
+        "id": 11,
+        "name": "Kiran Wagh",
+        "age": 33,
+        "location": "Kharadi, Pune",
+        "crime": "Assault",
+        "image": "/static/images/criminal_11.jpg"
+    },
+    {
+        "id": 12,
+        "name": "Ramesh Mane",
+        "age": 39,
+        "location": "Pimpri, Pune",
+        "crime": "Molestation",
+        "image": "/static/images/criminal_12.jpg"
+    },
+    {
+        "id": 13,
+        "name": "Rakesh Patil",
+        "age": 56,
+        "location": "Kalyani Nagar, Pune",
+        "crime": "Domestic Violence",
+        "image": "/static/images/criminal_13.jpg"
+    },
+    {
+        "id": 14,
+        "name": "Rajesh Wagh",
+        "age": 32,
+        "location": "Viman Nagar, Pune",
+        "crime": "Assault",
+        "image": "/static/images/criminal_14.jpg"
+    },
+    {
+        "id": 15,
+        "name": "Vijay More",
+        "age": 29,
+        "location": "Kothrud, Pune",
+        "crime": "Kidnapping",
+        "image": "/static/images/criminal_15.jpg"
+    },
+    {
+        "id": 16,
+        "name": "Ramesh Kadam",
+        "age": 55,
+        "location": "Hadapsar, Pune",
+        "crime": "Theft",
+        "image": "/static/images/criminal_16.jpg"
+    },
+    {
+        "id": 17,
+        "name": "Sanjay Chavan",
+        "age": 27,
+        "location": "Wagholi, Pune",
+        "crime": "Molestation",
+        "image": "/static/images/criminal_17.jpg"
+    },
+    {
+        "id": 18,
+        "name": "Vishal Mane",
+        "age": 44,
+        "location": "Hadapsar, Pune",
+        "crime": "Theft",
+        "image": "/static/images/criminal_18.jpg"
+    },
+    {
+        "id": 19,
+        "name": "Sandeep More",
+        "age": 41,
+        "location": "Shivajinagar, Pune",
+        "crime": "Assault",
+        "image": "/static/images/criminal_19.jpg"
+    },
+    {
+        "id": 20,
+        "name": "Yogesh Gaikwad",
+        "age": 42,
+        "location": "Kalyani Nagar, Pune",
+        "crime": "Theft",
+        "image": "/static/images/criminal_20.jpg"
+    },
+    {
+        "id": 21,
+        "name": "Rakesh Wagh",
+        "age": 50,
+        "location": "Kalyani Nagar, Pune",
+        "crime": "Domestic Violence",
+        "image": "/static/images/criminal_21.jpg"
+    },
+    {
+        "id": 22,
+        "name": "Deepak Deshmukh",
+        "age": 44,
+        "location": "Hinjewadi, Pune",
+        "crime": "Harassment",
+        "image": "/static/images/criminal_22.jpg"
+    },
+    {
+        "id": 23,
+        "name": "Yogesh Jadhav",
+        "age": 37,
+        "location": "Wagholi, Pune",
+        "crime": "Stalking",
+        "image": "/static/images/criminal_23.jpg"
+    },
+    {
+        "id": 24,
+        "name": "Mahesh Kale",
+        "age": 37,
+        "location": "Kharadi, Pune",
+        "crime": "Molestation",
+        "image": "/static/images/criminal_24.jpg"
+    },
+    {
+        "id": 25,
+        "name": "Yogesh Mane",
+        "age": 42,
+        "location": "Katraj, Pune",
+        "crime": "Molestation",
+        "image": "/static/images/criminal_25.jpg"
+    },
+    {
+        "id": 26,
+        "name": "Sunil Gaikwad",
+        "age": 46,
+        "location": "Aundh, Pune",
+        "crime": "Extortion",
+        "image": "/static/images/criminal_26.jpg"
+    },
+    {
+        "id": 27,
+        "name": "Vikram Shinde",
+        "age": 40,
+        "location": "Pimpri, Pune",
+        "crime": "Theft",
+        "image": "/static/images/criminal_27.jpg"
+    },
+    {
+        "id": 28,
+        "name": "Ganesh Bhosale",
+        "age": 34,
+        "location": "Viman Nagar, Pune",
+        "crime": "Molestation",
+        "image": "/static/images/criminal_28.jpg"
+    },
+    {
+        "id": 29,
+        "name": "Prakash Gaikwad",
+        "age": 59,
+        "location": "Hadapsar, Pune",
+        "crime": "Harassment",
+        "image": "/static/images/criminal_29.jpg"
+    },
+    {
+        "id": 30,
+        "name": "Sandeep Wagh",
+        "age": 44,
+        "location": "Kalyani Nagar, Pune",
+        "crime": "Extortion",
+        "image": "/static/images/criminal_30.jpg"
+    },
+    {
+        "id": 31,
+        "name": "Mahesh Shinde",
+        "age": 35,
+        "location": "Viman Nagar, Pune",
+        "crime": "Harassment",
+        "image": "/static/images/criminal_31.jpg"
+    },
+    {
+        "id": 32,
+        "name": "Santosh Mane",
+        "age": 38,
+        "location": "Kharadi, Pune",
+        "crime": "Domestic Violence",
+        "image": "/static/images/criminal_32.jpg"
+    },
+    {
+        "id": 33,
+        "name": "Amit Pawar",
+        "age": 34,
+        "location": "Aundh, Pune",
+        "crime": "Theft",
+        "image": "/static/images/criminal_33.jpg"
+    },
+    {
+        "id": 34,
+        "name": "Sagar Bhosale",
+        "age": 47,
+        "location": "Pimpri, Pune",
+        "crime": "Cyberbullying",
+        "image": "/static/images/criminal_34.jpg"
+    },
+    {
+        "id": 35,
+        "name": "Mahesh Pawar",
+        "age": 53,
+        "location": "Swargate, Pune",
+        "crime": "Cyberbullying",
+        "image": "/static/images/criminal_35.jpg"
+    },
+    {
+        "id": 36,
+        "name": "Vishal Mane",
+        "age": 34,
+        "location": "Wagholi, Pune",
+        "crime": "Theft",
+        "image": "/static/images/criminal_36.jpg"
+    },
+    {
+        "id": 37,
+        "name": "Mahesh Bhosale",
+        "age": 56,
+        "location": "Hinjewadi, Pune",
+        "crime": "Harassment",
+        "image": "/static/images/criminal_37.jpg"
+    },
+    {
+        "id": 38,
+        "name": "Vijay Chavan",
+        "age": 35,
+        "location": "Wagholi, Pune",
+        "crime": "Assault",
+        "image": "/static/images/criminal_38.jpg"
+    },
+    {
+        "id": 39,
+        "name": "Ramesh Bhosale",
+        "age": 51,
+        "location": "Hinjewadi, Pune",
+        "crime": "Molestation",
+        "image": "/static/images/criminal_39.jpg"
+    },
+    {
+        "id": 40,
+        "name": "Vijay Pawar",
+        "age": 47,
+        "location": "Viman Nagar, Pune",
+        "crime": "Assault",
+        "image": "/static/images/criminal_40.jpg"
+    },
+    {
+        "id": 41,
+        "name": "Sagar Gaikwad",
+        "age": 22,
+        "location": "Camp, Pune",
+        "crime": "Molestation",
+        "image": "/static/images/criminal_41.jpg"
+    },
+    {
+        "id": 42,
+        "name": "Yogesh Pawar",
+        "age": 56,
+        "location": "Baner, Pune",
+        "crime": "Extortion",
+        "image": "/static/images/criminal_42.jpg"
+    },
+    {
+        "id": 43,
+        "name": "Vishal Joshi",
+        "age": 55,
+        "location": "Pimpri, Pune",
+        "crime": "Harassment",
+        "image": "/static/images/criminal_43.jpg"
+    },
+    {
+        "id": 44,
+        "name": "Vijay Patil",
+        "age": 24,
+        "location": "Pimpri, Pune",
+        "crime": "Extortion",
+        "image": "/static/images/criminal_44.jpg"
+    },
+    {
+        "id": 45,
+        "name": "Amit Bhosale",
+        "age": 47,
+        "location": "Kothrud, Pune",
+        "crime": "Harassment",
+        "image": "/static/images/criminal_45.jpg"
+    },
+    {
+        "id": 46,
+        "name": "Suresh Chavan",
+        "age": 34,
+        "location": "Aundh, Pune",
+        "crime": "Extortion",
+        "image": "/static/images/criminal_46.jpg"
+    },
+    {
+        "id": 47,
+        "name": "Ganesh Kharat",
+        "age": 58,
+        "location": "Baner, Pune",
+        "crime": "Extortion",
+        "image": "/static/images/criminal_47.jpg"
+    },
+    {
+        "id": 48,
+        "name": "Nitin Jadhav",
+        "age": 25,
+        "location": "Kothrud, Pune",
+        "crime": "Assault",
+        "image": "/static/images/criminal_48.jpg"
+    },
+    {
+        "id": 49,
+        "name": "Deepak Gaikwad",
+        "age": 25,
+        "location": "Pimpri, Pune",
+        "crime": "Stalking",
+        "image": "/static/images/criminal_49.jpg"
+    },
+    {
+        "id": 50,
+        "name": "Sanjay Joshi",
+        "age": 49,
+        "location": "Chinchwad, Pune",
+        "crime": "Extortion",
+        "image": "/static/images/criminal_50.jpg"
+    }
+]
