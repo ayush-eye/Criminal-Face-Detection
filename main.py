@@ -43,6 +43,27 @@ def load_data():
 
 criminals_data = load_data()
 
+# Pre-calculate hashes for "accurate" simulation
+known_criminals_by_hash = {}
+
+def index_criminals():
+    global known_criminals_by_hash
+    print("Indexing criminal hashes for accurate detection simulation...")
+    for criminal in criminals_data:
+        # Construct path from the image field (remove leading slash)
+        img_path = criminal["image"].lstrip("/")
+        if os.path.exists(img_path):
+            try:
+                with open(img_path, "rb") as f:
+                    content = f.read()
+                    file_hash = hashlib.md5(content).hexdigest()
+                    known_criminals_by_hash[file_hash] = criminal
+            except Exception as e:
+                print(f"Error indexing {img_path}: {e}")
+    print(f"Indexed {len(known_criminals_by_hash)} criminal images.")
+
+index_criminals()
+
 @app.get("/api/criminals")
 def get_all_criminals():
     return {"status": "success", "data": criminals_data}
@@ -50,23 +71,34 @@ def get_all_criminals():
 @app.post("/api/criminals/detect")
 async def detect_criminal(file: UploadFile = File(...)):
     """
-    Deterministic dummy endpoint for face detection.
-    In a real scenario, this would use a ML model to extract face embeddings.
-    Here we use the file hash to ensure the same image always yields the same result.
+    Simulated AI face detection.
+    First checks for an exact image match (hash), then falls back to 
+    deterministic random matching for unknown images.
     """
     criminals = load_data()
     if not criminals:
         return {"status": "error", "message": "No data available"}
         
-    # Read file content to generate a deterministic seed
+    # Read file content
     content = await file.read()
-    file_hash = int(hashlib.md5(content).hexdigest(), 16)
+    file_hash_hex = hashlib.md5(content).hexdigest()
     
-    # Create a local random instance for determinism
-    local_random = random.Random(file_hash)
+    # 1. CHECK FOR EXACT MATCH (Realism)
+    if file_hash_hex in known_criminals_by_hash:
+        matched_criminal = known_criminals_by_hash[file_hash_hex]
+        return {
+            "status": "success",
+            "match": True,
+            "confidence": round(random.uniform(98.5, 99.9), 2), # High confidence for exact match
+            "record_type": "exact_match",
+            "data": matched_criminal
+        }
+
+    # 2. FALLBACK TO DETERMINISTIC SIMULATION
+    file_hash_int = int(file_hash_hex, 16)
+    local_random = random.Random(file_hash_int)
     
-    # Simulate processing time
-    # 80% chance of finding a match (deterministic per image)
+    # Simulate an 80% chance of finding a "similar" match
     match_found = local_random.random() < 0.8
     
     if match_found:
@@ -74,7 +106,8 @@ async def detect_criminal(file: UploadFile = File(...)):
         return {
             "status": "success",
             "match": True,
-            "confidence": round(local_random.uniform(75.5, 99.9), 2),
+            "confidence": round(local_random.uniform(75.5, 95.0), 2),
+            "record_type": "similar_match",
             "data": matched_criminal
         }
     else:
