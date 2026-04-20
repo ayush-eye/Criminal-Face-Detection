@@ -6,6 +6,7 @@ import json
 import random
 
 import os
+import hashlib
 
 app = FastAPI(title="Criminal Face Detection API")
 
@@ -49,25 +50,31 @@ def get_all_criminals():
 @app.post("/api/criminals/detect")
 async def detect_criminal(file: UploadFile = File(...)):
     """
-    Dummy endpoint for face detection.
-    In a real scenario, this would use a ML model to extract face embeddings
-    and match them against a database. Here we just return a random match from our dummy data 
-    or a "no match found" response.
+    Deterministic dummy endpoint for face detection.
+    In a real scenario, this would use a ML model to extract face embeddings.
+    Here we use the file hash to ensure the same image always yields the same result.
     """
     criminals = load_data()
     if not criminals:
         return {"status": "error", "message": "No data available"}
         
+    # Read file content to generate a deterministic seed
+    content = await file.read()
+    file_hash = int(hashlib.md5(content).hexdigest(), 16)
+    
+    # Create a local random instance for determinism
+    local_random = random.Random(file_hash)
+    
     # Simulate processing time
-    # Simulate an 80% chance of finding a match
-    match_found = random.random() < 0.8
+    # 80% chance of finding a match (deterministic per image)
+    match_found = local_random.random() < 0.8
     
     if match_found:
-        matched_criminal = random.choice(criminals)
+        matched_criminal = local_random.choice(criminals)
         return {
             "status": "success",
             "match": True,
-            "confidence": round(random.uniform(75.5, 99.9), 2),
+            "confidence": round(local_random.uniform(75.5, 99.9), 2),
             "data": matched_criminal
         }
     else:
